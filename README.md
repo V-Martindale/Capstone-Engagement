@@ -1,1 +1,2 @@
 # Capstone-Engagement
+This report outlines the assessment and analysis of the Capstone Company's network The weaknesses in the Capstone Web Server security led to the network being successfully exploited. Ultimately this breach led to files being stolen and the implementation of a backdoor through an unsecured port. As the vulnerabilities are documented, so are the methods in which to harden the system against them.
