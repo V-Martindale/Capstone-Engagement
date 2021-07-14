@@ -9,8 +9,11 @@ The Red team used a Kali virtual machine in order to reveal the different vulner
 After the Red Team's penetration of the Capstone Network the Blue Team used a virtual machine configured with an ELK instance to identify what was exploited on the network. Using the filters provided by the ELK server the Blue Team was able to identify the time and origin of each instance in which a vulnerability was exploited. After documenting the circumstances of each exploitation the Blue came up with a hardening strategy for each vulnerability: 
 
 Nmap Scan: Implement a default-deny rule set on the firewall of the host, and only allow ports 80 and 443 to be open to allowed Ip addresses.
-Hidden Directory: Create a whitelist of Ip addresses to minimize those who can access the hidden “secret_folder” directory
+
+Hidden Directory: Create a whitelist of Ip addresses to minimize those who can access the hidden “secret_folder” directory.
+
 Brute Force Attack(Hydra): Stronger password policies need to be implemented such as multiple failed-login lockdown, secondary login question, and/or captcha(bot prevention). 
+
 Reverse Shell Upload- Limit users to only using the “put” command on protected files as to prevent an accidental “get” upload of a malicious shell.
 
 # Conclusion
